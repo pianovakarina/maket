@@ -1,0 +1,19 @@
+@import "../var.scss";
+
+.btn {
+  font-size: 17px;
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 7px 23px;
+
+  @media screen and (max-width: $s) {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  @media screen and (max-width: $xs) {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+}

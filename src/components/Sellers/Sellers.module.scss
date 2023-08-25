@@ -1,0 +1,14 @@
+@import "../App/App.module.scss";
+@import "../var.scss";
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: $s) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: $s) {
+    margin-bottom: 20px;
+  }
+}

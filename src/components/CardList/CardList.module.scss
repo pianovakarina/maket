@@ -1,0 +1,27 @@
+@import "../var.scss";
+
+.body {
+  max-width: 1065px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: $s) {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: $s) {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    margin: 0 -32px;
+
+    @media screen and (max-width: $s) {
+      margin: 0 -20px;
+    }
+
+    @media screen and (max-width: $s) {
+      margin: 0 -15px;
+    }
+  }
+}

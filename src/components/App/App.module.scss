@@ -1,0 +1,39 @@
+@import "../var.scss";
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  // .navContainer {
+  //   max-width: 1180px;
+  //   margin: 0 auto;
+
+  .content {
+    flex: 1 1 auto;
+  }
+
+  .footer {
+    flex: 0 0 auto;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  @media screen and (max-width: $m) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  @media screen and (max-width: $s) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  @media screen and (max-width: $s) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

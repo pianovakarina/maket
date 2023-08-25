@@ -1,0 +1,15 @@
+@import "../var.scss";
+
+.navIconsRow {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @media screen and (max-width: $m) {
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $s) {
+    gap: 5px;
+  }
+}

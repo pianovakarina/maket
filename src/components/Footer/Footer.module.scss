@@ -1,0 +1,123 @@
+@import "../var.scss";
+
+.wrapper {
+  background: #020202;
+  padding: 50px 0 15px 0;
+
+  @media screen and (max-width: $s) {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $s) {
+      margin-bottom: 30px;
+    }
+
+    .logoGroup {
+      @media screen and (max-width: $xs) {
+        padding-right: 50px;
+      }
+      .img {
+        margin-bottom: 35px;
+
+        @media screen and (max-width: $s) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    .rowContent {
+      display: flex;
+      gap: 70px;
+
+      @media screen and (max-width: $s) {
+        gap: 20px;
+      }
+    }
+    .rowAbout {
+      .titleAbout {
+        font-size: 14px;
+        line-height: 23px;
+        color: #ffffff;
+
+        @media screen and (max-width: $s) {
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+
+      .ulAbout {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 35px 0 8px 0;
+        color: #ffffff;
+
+        @media screen and (max-width: $s) {
+          font-size: 10px;
+          line-height: 15px;
+          padding: 15px 0 4px 0;
+        }
+
+        .liAbout {
+          padding-bottom: 12px;
+
+          @media screen and (max-width: $s) {
+            padding-bottom: 6px;
+          }
+        }
+      }
+    }
+
+    .rowContact {
+      .titleContact {
+        font-size: 14px;
+        line-height: 23px;
+        color: #ffffff;
+
+        @media screen and (max-width: $s) {
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+
+      .email {
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+        padding: 35px 0 12px 0;
+
+        @media screen and (max-width: $s) {
+          font-size: 10px;
+          line-height: 15px;
+          padding: 15px 0 4px 0;
+        }
+      }
+
+      .txtContact {
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+
+        @media screen and (max-width: $s) {
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+
+.text {
+  text-align: center;
+
+  color: #ffffff;
+
+  @media screen and (max-width: $m) {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

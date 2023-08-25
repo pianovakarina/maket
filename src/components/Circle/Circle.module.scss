@@ -1,0 +1,66 @@
+@import "../var.scss";
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33.3%;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: $m) {
+    padding-bottom: 50px;
+  }
+  @media screen and (max-width: $s) {
+    padding-bottom: 30px;
+  }
+  @media screen and (max-width: $xs) {
+    flex: 0 0 50%;
+    padding-bottom: 18px;
+  }
+
+  .circle {
+    background: #21f7ec;
+    border-radius: 35px;
+    height: 4em;
+    width: 4em;
+    margin-bottom: 25px;
+    align-self: center;
+
+    @media screen and (max-width: $m) {
+      height: 3em;
+      width: 3em;
+    }
+
+    @media screen and (max-width: $s) {
+      height: 2em;
+      width: 2em;
+      margin-bottom: 15px;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0 75px;
+
+    @media screen and (max-width: $m) {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+      padding: 0 45px;
+    }
+
+    @media screen and (max-width: $s) {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+      padding: 0 30px;
+    }
+    @media screen and (max-width: $xs) {
+      font-size: 11px;
+      line-height: 13px;
+      padding: 0 18px;
+    }
+  }
+}

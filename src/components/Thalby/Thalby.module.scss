@@ -1,0 +1,40 @@
+@import "../var.scss";
+
+.body {
+  padding-top: 150px;
+
+  @media screen and (max-width: $m) {
+    padding-top: 50px;
+  }
+  @media screen and (max-width: $s) {
+    padding-top: 30px;
+  }
+  @media screen and (max-width: $xs) {
+    padding-top: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 75px;
+
+    @media screen and (max-width: $m) {
+      margin-bottom: 40px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    @media screen and (max-width: $s) {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    @media screen and (max-width: $xs) {
+      margin-bottom: 15px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../var.scss";
+
+.row {
+  display: flex;
+  margin: 0 -50px;
+
+  @media screen and (max-width: $m) {
+    margin: 0 -20px;
+  }
+
+  @media screen and (max-width: $s) {
+    margin: 0 -15px;
+  }
+
+  @media screen and (max-width: $xs) {
+    flex-direction: column;
+  }
+}

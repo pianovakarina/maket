@@ -1,0 +1,75 @@
+@import "../var.scss";
+
+.wrapper {
+  background: #f0efeb;
+  padding: 50px 0;
+
+  @media screen and (max-width: $s) {
+    padding: 30px 0;
+  }
+
+  @media screen and (max-width: $s) {
+    padding: 20px 0;
+  }
+}
+
+.row {
+  display: flex;
+
+  .textBlock {
+    flex: 1 1 auto;
+    margin-right: 50px;
+
+    @media screen and (max-width: $s) {
+      margin-right: 20px;
+    }
+
+    .textTitle {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 70px;
+      padding-bottom: 50px;
+
+      @media screen and (max-width: $m) {
+        font-size: 35px;
+        line-height: 50px;
+        padding-bottom: 40px;
+      }
+      @media screen and (max-width: $s) {
+        font-size: 22px;
+        line-height: 25px;
+        padding-bottom: 20px;
+      }
+      @media screen and (max-width: $s) {
+        font-size: 18px;
+        line-height: 21px;
+        padding-bottom: 10px;
+      }
+    }
+
+    .text {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 36px;
+
+      @media screen and (max-width: $m) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      @media screen and (max-width: $s) {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 25px;
+      }
+      @media screen and (max-width: $s) {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .imageBlock {
+    flex: 0 0 45%;
+  }
+}

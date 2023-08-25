@@ -1,0 +1,40 @@
+@import "../App/App.module.scss";
+@import "../var.scss";
+
+.wrapperKeep {
+  padding: 80px 0;
+  @media screen and (max-width: $s) {
+    padding: 40px 0;
+  }
+
+  @media screen and (max-width: $xs) {
+    padding: 20px 0;
+  }
+
+  .row {
+    .title {
+      text-align: center;
+    }
+
+    .content {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      text-align: center;
+      padding: 25px 0 35px 0;
+
+      @media screen and (max-width: $s) {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 15px 0 25px 0;
+      }
+
+      @media screen and (max-width: $xs) {
+        font-size: 11px;
+        line-height: 14px;
+        padding: 10px 0 15px 0;
+      }
+    }
+  }
+}

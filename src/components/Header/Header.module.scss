@@ -1,0 +1,119 @@
+@import "../var.scss";
+
+$link-hover-color: hsl(198, 81%, 67%);
+$nav-font-color: #0c0c0c;
+
+.navRow {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $s) {
+    display: block;
+  }
+
+  // & li {
+  //   min-width: 100px;
+  //   a {
+  //     padding: 15px;
+  //     line-height: 10px;
+  //   }
+  // }
+}
+
+.logoImg {
+  display: flex;
+  justify-content: end;
+  gap: 60px;
+  align-items: center;
+
+  @media screen and (max-width: $xs) {
+    gap: 30px;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media screen and (max-width: $s) {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    z-index: 10;
+  }
+}
+// @media screen and (max-width: $s) {
+// }
+
+.navList {
+  list-style: none;
+  display: flex;
+
+  @media screen and (max-width: $s) {
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0efeb;
+    z-index: 10;
+    transition: 1s;
+    gap: 40px;
+    align-items: center;
+
+    // &.active {
+    //   left: 0;
+    // }
+  }
+}
+.active {
+  left: 0;
+}
+
+.navLi {
+  position: relative;
+}
+
+.list {
+  padding: 10px 20px 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: $nav-font-color;
+
+  @media screen and (max-width: $m) {
+    padding: 10px 5px 0 5px;
+  }
+  @media screen and (max-width: $s) {
+    padding: 5px 2px 0 2px;
+    line-height: 15px;
+    font-size: 28px;
+  }
+
+  &::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: $link-hover-color;
+    width: 0%;
+    bottom: 0px;
+  }
+
+  &:hover::before {
+    width: 70%;
+
+    @media screen and (max-width: $s) {
+      width: 100%;
+    }
+  }
+
+  &:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+  }
+}

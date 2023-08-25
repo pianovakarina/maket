@@ -1,0 +1,14 @@
+@import "../var.scss";
+
+.navImg {
+  align-self: center;
+  padding-right: 100px;
+
+  @media screen and (max-width: $m) {
+    padding-right: 30px;
+  }
+
+  @media screen and (max-width: $s) {
+    padding-right: 0;
+  }
+}
